@@ -1,3 +1,5 @@
+import os
+import urllib.request
 import streamlit as st
 import torch
 import torch.nn as nn
@@ -15,7 +17,9 @@ st.set_page_config(
 )
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-MODEL_PATH = "model/efficientnet_v2s_aug-model.pth"
+MODEL_URL = "https://huggingface.co/nabielherdiana/cat-breed-efficientnetv2/resolve/main/efficientnet_v2s_aug-model.pth"
+MODEL_PATH = "efficientnet_v2s_aug-model.pth"
+
 NUM_CLASSES = 20
 
 # ===============================
@@ -62,10 +66,13 @@ image_transform = transforms.Compose([
 # ===============================
 @st.cache_resource
 def load_model():
+    if not os.path.exists(MODEL_PATH):
+        st.info("⬇️ Downloading model from Hugging Face...")
+        urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
+
     weights = EfficientNet_V2_S_Weights.IMAGENET1K_V1
     model = efficientnet_v2_s(weights=weights)
 
-    # Replace classifier
     in_features = model.classifier[1].in_features
     model.classifier[1] = nn.Linear(in_features, NUM_CLASSES)
 
@@ -78,6 +85,7 @@ def load_model():
     model.load_state_dict(state)
     model.to(DEVICE)
     model.eval()
+
     return model
 
 model = load_model()
