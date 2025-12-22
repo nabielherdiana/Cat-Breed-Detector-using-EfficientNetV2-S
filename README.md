@@ -110,8 +110,10 @@ This app is deployed using **Streamlit Community Cloud** and can be accessed pub
 
 ## 📌 Author
 
-**Nabiel Herdiana**
-Statistics & Data Enthusiast | Machine Learning & Data Analytics
+Nabiel Alfallah Herdiana
+Rasyid Abdurrahman
+Yaafi Ferdian Syahputra
+Farhan Alkarimi
 
 ---
 
