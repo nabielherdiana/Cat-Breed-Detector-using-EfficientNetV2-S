@@ -44,7 +44,7 @@ The complete **model training and experimentation pipeline** was developed using
 * Model saving for deployment
 
 📓 **Google Colab Notebook (Modeling & Training):**
-👉 [Cat Breed Classification with CNN]([https://colab.research.google.com/drive/1UwfBfmUZnd3p-5474xN-gct5M8PWtfLC?usp=sharing](https://colab.research.google.com/drive/1AwfTfBSdPDQI-DJv8l1m9WIJxmTJP5YQ?usp=sharing)
+👉 [Cat Breed Classification with CNN](https://colab.research.google.com/drive/1AwfTfBSdPDQI-DJv8l1m9WIJxmTJP5YQ)
 
 This notebook demonstrates the **machine learning workflow behind the deployed model**, complementing the Streamlit inference application.
 
