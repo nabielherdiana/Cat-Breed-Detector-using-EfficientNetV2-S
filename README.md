@@ -49,11 +49,13 @@ This notebook demonstrates the **machine learning workflow behind the deployed m
 
 ### Sample Predictions
 
-To evaluate model performance qualitatively, we visualized predictions on **20 random samples** from the test dataset. The labels indicate the **Predicted Class** and the **Confidence Score**.
+### Prediction Gallery
+
+To evaluate model performance qualitatively, we visualized predictions on a random batch of test images. The grid below displays the **Actual Class**, the **Predicted Class**, and the **Confidence Score**.
 
 ![Sample Predictions](assets/cat-prediction.png)
 
-*Figure: Random batch of 20 inference results showing the model's ability to distinguish between visually similar breeds.*
+*Figure: Random batch of inference results. While the model performs well on distinctive breeds (e.g., Sphynx, Siamese), it faces challenges with visually similar breeds, such as distinguishing between **Maine Coon** and **Norwegian Forest**, which is a known challenge in fine-grained classification.*
 
 ### Tech Stack
 
