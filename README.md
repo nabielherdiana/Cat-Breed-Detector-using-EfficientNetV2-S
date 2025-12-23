@@ -47,15 +47,15 @@ This notebook demonstrates the **machine learning workflow behind the deployed m
 3. Image is passed through the EfficientNetV2-S model
 4. The app displays the **Top-3 most likely cat breeds**
 
-### Sample Predictions
+### Model Performance by Breed
 
-### Prediction Gallery
-
-To evaluate model performance qualitatively, we visualized predictions on a random batch of test images. The grid below displays the **Actual Class**, the **Predicted Class**, and the **Confidence Score**.
+The grid below demonstrates the model's predictions across **all 20 supported cat breeds**. One random sample was selected for each class to verify the model's capability.
 
 ![Sample Predictions](assets/cat-prediction.png)
 
-*Figure: Random batch of inference results. While the model performs well on distinctive breeds (e.g., Sphynx, Siamese), it faces challenges with visually similar breeds, such as distinguishing between **Maine Coon** and **Norwegian Forest**, which is a known challenge in fine-grained classification.*
+*Figure: Qualitative evaluation showing representative samples for each breed. Green labels indicate correct predictions. Red labels indicate misclassifications, which highlight specific challenges:*
+* ***Visual Similarity:** The model confuses breeds with similar morphology, such as **Maine Coon vs. Norwegian Forest** and **Turkish Van vs. Turkish Angora**.*
+* ***Ambiguity:** For mixed breeds like **Domestic Long Hair**, the model may struggle with non-standard features, resulting in low-confidence incorrect predictions (e.g., <40%).*
 
 ### Tech Stack
 
