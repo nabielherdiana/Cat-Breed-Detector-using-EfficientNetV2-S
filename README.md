@@ -1,5 +1,3 @@
----
-
 # Cat Breed Detector using EfficientNetV2-S
 
 An interactive **cat breed classification web application** built with **Streamlit** and powered by a **fine-tuned EfficientNetV2-S deep learning model**.
