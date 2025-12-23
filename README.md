@@ -8,9 +8,7 @@ This project demonstrates the end-to-end process of **computer vision inference*
 **Live Demo:**
 [Cat Breed Detector Web Application](https://cat-breed-detector.streamlit.app/)
 
----
-
-## Features
+### Features
 
 * Upload a cat image **from local file**
 * Paste an **image URL** for instant prediction
@@ -18,9 +16,7 @@ This project demonstrates the end-to-end process of **computer vision inference*
 * Clean, modern, and user-friendly UI
 * Deployed publicly using **Streamlit Community Cloud**
 
----
-
-## Model Overview
+### Model Overview
 
 * **Architecture:** EfficientNetV2-S
 * **Framework:** PyTorch
@@ -30,9 +26,7 @@ This project demonstrates the end-to-end process of **computer vision inference*
 
 The trained model is hosted externally on **Hugging Face Hub** and automatically downloaded when the app runs.
 
----
-
-## Model Development (Google Colab)
+### Model Development (Google Colab)
 
 The complete **model training and experimentation pipeline** was developed using **Python in Google Colab**, including:
 
@@ -48,18 +42,14 @@ The complete **model training and experimentation pipeline** was developed using
 
 This notebook demonstrates the **machine learning workflow behind the deployed model**, complementing the Streamlit inference application.
 
----
-
-## How It Works
+### How It Works
 
 1. User uploads an image or pastes an image URL
 2. Image is preprocessed (resize, normalization)
 3. Image is passed through the EfficientNetV2-S model
 4. The app displays the **Top-3 most likely cat breeds**
 
----
-
-## Tech Stack
+### Tech Stack
 
 * **Python**
 * **PyTorch**
@@ -70,9 +60,7 @@ This notebook demonstrates the **machine learning workflow behind the deployed m
 * **Hugging Face Hub** (model hosting)
 * **Google Colab** (model training & experimentation)
 
----
-
-## Project Structure
+### Project Structure
 
 ```
 cat-breed-detector/
@@ -82,33 +70,25 @@ cat-breed-detector/
 └── README.md           # Project documentation
 ```
 
----
-
-## Run Locally
+### Run Locally
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
----
-
-## Deployment
+### Deployment
 
 This app is deployed using **Streamlit Community Cloud** and can be accessed publicly:
 
 [https://cat-breed-detector.streamlit.app/](https://cat-breed-detector.streamlit.app/)
 
----
-
-## Notes
+### Notes
 
 * Predictions depend on image quality and visual clarity
 * The model focuses on visual features and may confuse visually similar breeds
 
----
-
-## Author
+### Author
 
 - Nabiel Alfallah Herdiana  
 - Rasyid Abdurrahman  
@@ -117,6 +97,6 @@ This app is deployed using **Streamlit Community Cloud** and can be accessed pub
 
 ---
 
-### If you find this project interesting, feel free to give it a star⭐!
+If you find this project interesting, feel free to give it a star⭐!
 
 ---
