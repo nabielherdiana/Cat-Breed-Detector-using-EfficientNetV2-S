@@ -47,6 +47,14 @@ This notebook demonstrates the **machine learning workflow behind the deployed m
 3. Image is passed through the EfficientNetV2-S model
 4. The app displays the **Top-3 most likely cat breeds**
 
+### Sample Predictions
+
+To evaluate model performance qualitatively, we visualized predictions on **20 random samples** from the test dataset. The labels indicate the **Predicted Class** and the **Confidence Score**.
+
+![Sample Predictions](assets/cat-prediction.png)
+
+*Figure: Random batch of 20 inference results showing the model's ability to distinguish between visually similar breeds.*
+
 ### Tech Stack
 
 * **Python**
